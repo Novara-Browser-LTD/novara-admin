@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Novara Admin</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+  <h1>Novara Admin Panel</h1>
+
+  <p class="subtitle">
+    Browser Management System
+  </p>
+
+  <div class="card">
+
+    <h2>Update Version</h2>
+
+    <input
+      type="text"
+      id="versionInput"
+      placeholder="v1.0.1"
+    >
+
+  </div>
+
+  <div class="card">
+
+    <h2>Download URL</h2>
+
+    <input
+      type="text"
+      id="downloadInput"
+      placeholder="https://downloadlink.com"
+    >
+
+  </div>
+
+  <div class="card">
+
+    <h2>Server Status</h2>
+
+    <select id="statusInput">
+
+      <option>
+        All Systems Operational
+      </option>
+
+      <option>
+        Maintenance
+      </option>
+
+      <option>
+        Offline
+      </option>
+
+    </select>
+
+  </div>
+
+  <div class="card">
+
+    <h2>Patch Notes</h2>
+
+    <textarea
+      id="patchNotes"
+      placeholder="Write patch notes here..."
+    ></textarea>
+
+  </div>
+
+  <button onclick="saveData()">
+    Save Changes
+  </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
